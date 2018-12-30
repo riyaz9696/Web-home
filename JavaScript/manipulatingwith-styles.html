@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manupulating with Styles in javaScript</title>
+  </head>
+<body>
+<p id="text">Hello World!!</p>
+<button id="myButton">Change text</button>
+<p id="secondParagraph">javaScript is...</p>
+<button id="secondButton">Append text</button>
+<p id="emptyParagraph"></p>
+<button id="createParagraph">Create text</button>
+<p id="moreText">This is some text</p>
+<button id="styleText">Style text<button>
+<script type="text/javaScript">
+document.getElementByID("myButton").onClick=function(){
+	document.getElementByID("text").innerHTML="Hello";
+}
+document.getElementByID("secondButton").onClick=function(){
+	document.getElementByID("secondParagraph").innerHTML="I think"+
+	document.getElementByID("secondParagraph").innerHTML="Awesome";
+}
+document.getElementByID("createParagraph").onClick=function(){
+	document.getElementByID("emptyParagraph").innerHTML="<h1>Hi there!!</h1>";
+}
+document.getElementByID("styleText").onClick=function(){
+	document.getElementByID("moreText").style.color="red";
+}
+</script>
+</body>
+</html>
